@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { useState } from 'react';
 
+import Nav from '../components/navigation';
+
+
 // components/MySwiper.js
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -21,35 +24,7 @@ export default function Home() {
     <div className="bg-[#FEFCF2] min-h-screen">
 
       {/* navigation */}
-      <nav className="container mx-auto flex justify-between items-center py-3 fixed bg-[#FEFCF2] z-10 px-4 border-b-2 border-blue-800">
-        <Image unoptimized src="/logo.jpg" alt="Boat" className="w-20 md:w-32" width={200} height={200} />
-        <div className="md:hidden z-20"> {/* Asegura que el botón esté sobre otros elementos */}
-          <button onClick={() => setIsOpen(!isOpen)} className="text-blue-900 hover:text-blue-700 focus:outline-none focus:text-blue-700">
-            {isOpen ? (
-              <svg className="w-10 h-10 text-white mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"></path></svg> // Cambio de color aquí
-            ) : (
-              <svg className="w-10 h-10 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            )}
-          </button>
-        </div>
-        <div className={`${isOpen ? 'flex' : 'hidden'} flex justify-center flex-col md:flex-row md:flex items-center absolute bg-blue-900 shadow-md w-full h-screen top-0 left-0 md:static md:bg-transparent md:shadow-none md:h-auto transition-all duration-500 ease-in-out`}>
-          <ul className="flex flex-col md:flex-row md:space-x-10 md:text-lg md:font-medium w-full justify-around text-white">
-            <li className="transition-transform duration-300 ease-in-out transform hover:translate-y-1">
-              <a href="#trips" className="block text-white py-2 px-4 hover:bg-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 text-3xl" onClick={() => setIsOpen(false)}>Trips</a>
-            </li>
-            <li className="transition-transform duration-300 ease-in-out transform hover:translate-y-1">
-              <a href="#menu" className="block text-white py-2 px-4 hover:bg-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 text-3xl" onClick={() => setIsOpen(false)}>Menu</a>
-            </li>
-            <li className="transition-transform duration-300 ease-in-out transform hover:translate-y-1">
-              <a href="#contact" className="block text-white py-2 px-4 hover:bg-blue-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 text-3xl" onClick={() => setIsOpen(false)}>Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div className="hidden md:block">
-          <a href="#contact" className="text-xl text-blue-900 border-2 border-blue-900 px-10 py-2 rounded-full">Book Now</a>
-        </div>
-      </nav>
-
+      <Nav />
 
       <Swiper
         slidesPerView={1.5}
@@ -65,7 +40,7 @@ export default function Home() {
         }}
         breakpoints={{
           576: {
-            slidesPerView: 3.5,
+            slidesPerView: 1.5,
           }
         }}
 
