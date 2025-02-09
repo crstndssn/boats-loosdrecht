@@ -1,0 +1,9 @@
+{
+    "home": {
+        "title": "¡Bienvenido!",
+        "description": "Este es un sitio multilingüe."
+    },
+    "button": {
+        "changeLanguage": "Cambiar idioma"
+    }
+}

@@ -1,52 +1,53 @@
 "use client"
 
 import '../src/app/globals.css';
-import Navigation from '../src/components/navigation';
+import Navigation from '@/components/navigation';
 
-const Pricing = () => {
+const Menu = () => {
   const menuItems = [
     {
       categoria: "Kaas arrangement voor 12 personen",
       items: [
-        { nombre: "Mini kaasfondue", precio: "€25,50 p.p" },
-        { nombre: "Kaasplank", precio: "€25,50 p.p" },
-        { nombre: "Stokbrood", precio: "€25,50 p.p" }
+        { nombre: "Mini kaasfondue", precio: "" },
+        { nombre: "Kaasplank", precio: "" },
+        { nombre: "Stokbrood", precio: "" }
       ],
     },
     {
       categoria: "BBQ arrangement voor 12 personen",
       items: [
-        { nombre: "Kip Saté", precio: "€18,00 p.p" },
-        { nombre: "Satésaus", precio: "€18,00 p.p" },
-        { nombre: "Stokbrood", precio: "€18,00 p.p" }
+        { nombre: "Kip Saté", precio: "" },
+        { nombre: "Satésaus", precio: "" },
+        { nombre: "Stokbrood", precio: "" }
       ],
     },
     {
       categoria: "Kaasplankje (te bestellen vanaf 5 personen)",
-      precio: "€14,50 p.p"
+      precio: ""
     },
     {
       categoria: "Mini fondue (te bestellen vanaf 5 personen)",
-      precio: "€10,50 p.p"
+      precio: ""
     },
     {
       categoria: "Warme dranken",
       items: [
-        { nombre: "Koffie", precio: "€2,00" },
-        { nombre: "Thee", precio: "€2,00" }
+        { nombre: "Koffie", precio: "" },
+        { nombre: "Thee", precio: "" }
       ],
     },
     {
-      categoria: "Gekoelde frisdranken",
+      categoria: "Gebak",
       items: [
-        { nombre: "Frisdranken", precio: "€3,00" }
+        { nombre: "Appeltaart", precio: "" }
       ],
     },
     {
       categoria: "Alcoholische dranken",
       items: [
-        { nombre: "Bier", precio: "€3,50" },
-        { nombre: "Wijn", precio: "€4,50" }
+        { nombre: "Bier", precio: "" },
+        { nombre: "Wijn", precio: "" },
+        { nombre: "Champagne", precio: "" },
       ],
     }
   ];
@@ -55,7 +56,7 @@ const Pricing = () => {
     <>
       <Navigation />
       <div className='container mx-auto py-6 bg-[#FEFCF2] z-10 px-6 border-b-4 border-blue-800 mt-10'>
-        <h1 className='text-2xl font-bold text-blue-800 mb-4'>Menu Prijzen</h1>
+        <h1 className='text-2xl font-bold text-blue-800 mb-4'>Menu opties</h1>
         <ul className='space-y-6'>
           {menuItems.map((menu, index) => (
             <li key={index} className='bg-white shadow-md p-4 rounded-lg'>
@@ -84,4 +85,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Menu;

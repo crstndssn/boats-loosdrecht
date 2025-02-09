@@ -1,10 +1,11 @@
 "use client"
 
+import { useTranslations } from 'next-intl';
+
 import Image from "next/image";
 import { useState } from 'react';
 
-import Nav from '../components/navigation';
-
+import Nav from '@/components/navigation';
 
 // components/MySwiper.js
 // Import Swiper React components
@@ -72,7 +73,7 @@ export default function Home() {
 
       <header className="container mx-auto mt-10 text-center md:text-left px-4 md:px-0">
         <p className="text-[#1839AF] text-xl">
-          Beleef de prachtige Loosdrechtse Plassen vanaf het water vanuit het comfort van onze luxe boten voor maximaal 12 personen. Altijd met een privé kapitein. Onze boten zijn ideaal voor bedrijfsuitjes, verjaardagen, speciale jubilea of gewoon voor een heerlijk dagje op het water met vrienden of familie. Wij hebben de perfecte vaart voor u. </p>
+          Beleef de prachtige Loosdrechtse Plassen vanaf het water vanuit het comfort van onze luxe boten voor maximaal 10 personen. Altijd met een privé kapitein. Onze boten zijn ideaal voor bedrijfsuitjes, verjaardagen, speciale jubilea of gewoon voor een heerlijk dagje op het water met vrienden of familie. Wij hebben de perfecte vaart voor u. </p>
         <p className="mt-4 text-[#1839AF] text-xl">
           Er zijn vele opties mogelijk met keuzes uit verschillende arrangementen: van brunch, lunch, BBQ, kaasplankje tot high tea. Wilt u liever zelf uw eigen eten regelen? Bij ons is dat ook geen probleem.
         </p>
@@ -115,7 +116,7 @@ export default function Home() {
             <div className="w-full text-center">
               <h3 className="text-4xl font-semibold">Privé Rondvaart</h3>
               <p className="text-2xl font-medium">Duur: Op aanvraag</p>
-              <p className="font-2xl mt-2">Perfect voor speciale gelegenheden zoals verjaardagen, jubilea of bedrijfsevenementen. U heeft de boot helemaal voor uzelf en kunt de route en duur van de rondvaart aanpassen aan uw wensen.</p>
+              <p className="font-2xl mt-2">Perfect voor speciale gelegenheden zoals verjaardagen, jubilea of bedrijfsevenementen. U kunt de route en duur van de rondvaart aanpassen aan uw wensen.</p>
             </div>
 
           </div>
@@ -147,7 +148,7 @@ export default function Home() {
             <div className="w-full text-center">
               <h3 className="text-4xl font-semibold">Standaard vaart</h3>
               <p className="text-2xl font-medium">Duur: 2 uur</p>
-              <p className="font-2xl mt-2">Verken de prachtige Loosdrechtse Plassen en geniet van het uitzicht op de natuur en pittoreske huisjes. Onze deskundige gidsen vertellen u alles over de geschiedenis en het ecosysteem van dit unieke gebied.</p>
+              <p className="font-2xl mt-2">Verken de prachtige Loosdrechtse Plassen en geniet van het uitzicht op de natuur en pittoreske huisjes. Onze kapitein laat u de mooiste plekjes van Loosdrecht zien.</p>
             </div>
 
           </div>
@@ -199,8 +200,8 @@ export default function Home() {
 
           <p className="text-xl my-3"><span className="font-semibold">Vertreklocatie:</span>  Porseleinhaven in Oud Loosdrecht. In overleg, op andere locaties ook mogelijk.</p>
 
-          <p className="text-xl my-3"><span className="font-semibold">Tijden:</span>  Vaarten vertrekken tussen 10:00 en 18:00 uur.
-            Avondrondvaarten beginnen om 20:00 uur.
+          <p className="text-xl my-3"><span className="font-semibold">Tijden:</span>  Vaarten vertrekken tussen 9:00 en 18:00 uur.
+            Avondrondvaarten beginnen om 20:00 uur. In overleg, andere tijden ook mogelijk.
           </p>
 
           <p className="text-xl my-3"><span className="font-semibold">Reserveringen:</span> Wij raden aan om van tevoren te reserveren, vooral in het hoogseizoen.</p>
@@ -223,7 +224,7 @@ export default function Home() {
       <section id="contact" className="bg-[#FEFCF2] my-10 container mx-auto">
         <div className="min-h-screen flex items-center justify-center bg-[#FEFCF2]">
           <div className=" p-8 rounded-lg w-full">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Boek uw uitje</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Aanvraagformulier</h2>
             <form action="https://formspree.io/f/mwpepobj" method="POST" className="space-y-4">
               <div>
                 <label className="block text-gray-700">Vul hier uw naam in</label>

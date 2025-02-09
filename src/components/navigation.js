@@ -33,10 +33,10 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="hidden md:flex md:items-center md:space-x-10 md:text-lg md:font-medium">
         <Link href="/">
-          <span className="block text-blue-900 hover:text-blue-700 text-3xl">Trips</span>
+          <span className="block text-blue-900 hover:text-blue-700 text-3xl">Hoofdmenu</span>
         </Link>
         <Link href="/pricing">
-          <span className="block text-blue-900 hover:text-blue-700 text-3xl">Prices</span>
+          <span className="block text-blue-900 hover:text-blue-700 text-3xl">Menu opites</span>
         </Link>
         <Link href="/contact">
           <span className="block text-blue-900 hover:text-blue-700 text-3xl">Contact</span>
@@ -48,12 +48,12 @@ const Navbar = () => {
         <ul className="flex flex-col text-white text-left space-y-4">
           <li>
             <Link href="/">
-              <span className="block py-2 px-4 text-[#FEFCF2] text-4xl" onClick={() => setIsOpen(false)}>Trips</span>
+              <span className="block py-2 px-4 text-[#FEFCF2] text-4xl" onClick={() => setIsOpen(false)}>Hoofdmenu</span>
             </Link>
           </li>
           <li>
             <Link href="/pricing">
-              <span className="block py-2 px-4 text-[#FEFCF2] text-4xl" onClick={() => setIsOpen(false)}>Prices</span>
+              <span className="block py-2 px-4 text-[#FEFCF2] text-4xl" onClick={() => setIsOpen(false)}>Menu opites</span>
             </Link>
           </li>
           <li>
