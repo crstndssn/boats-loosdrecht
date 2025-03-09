@@ -1,12 +1,13 @@
 "use client"
 
+import Header from '@/components/header';
 import '../src/app/globals.css';
 import Navigation from '@/components/navigation';
 
 const Menu = () => {
   const menuItems = [
     {
-      categoria: "Kaas arrangement voor 12 personen",
+      categoria: "Kaas arrangement voor 10 personen",
       items: [
         { nombre: "Mini kaasfondue", precio: "" },
         { nombre: "Kaasplank", precio: "" },
@@ -14,7 +15,7 @@ const Menu = () => {
       ],
     },
     {
-      categoria: "BBQ arrangement voor 12 personen",
+      categoria: "BBQ arrangement voor 10 personen",
       items: [
         { nombre: "Kip Saté", precio: "" },
         { nombre: "Satésaus", precio: "" },
@@ -55,7 +56,9 @@ const Menu = () => {
   return (
     <>
       <Navigation />
-      <div className='container mx-auto py-6 bg-[#FEFCF2] z-10 px-6 border-b-4 border-blue-800 mt-10'>
+
+      <Header />
+      <div className='container mx-auto py-6 bg-[#FEFCF2] z-10 px-6 border-b-4 border-blue-800 mt-0 md:mt-10'>
         <h1 className='text-2xl font-bold text-blue-800 mb-4'>Menu opties</h1>
         <ul className='space-y-6'>
           {menuItems.map((menu, index) => (

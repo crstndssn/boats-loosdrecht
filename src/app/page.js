@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from 'react';
 
 import Nav from '@/components/navigation';
+import Header from '@/components/header';
 
 // components/MySwiper.js
 // Import Swiper React components
@@ -24,6 +25,8 @@ export default function Home() {
 
       {/* navigation */}
       <Nav />
+
+      <Header />
 
       <Swiper
         slidesPerView={1.5}

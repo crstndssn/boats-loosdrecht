@@ -1,5 +1,6 @@
 "use client"
 
+import Header from '@/components/header';
 import '../src/app/globals.css';
 
 import Navigation from '../src/components/navigation'
@@ -12,7 +13,9 @@ const Contact = () => {
     return (
         <>
             <Navigation />
-            <section id="contact" className="bg-[#FEFCF2] my-10 container mx-auto">
+
+            <Header />
+            <section id="contact" className="bg-[#FEFCF2] mt-0 mb-5 md:my-10 container mx-auto">
                 <div className="min-h-screen flex items-center justify-center bg-[#FEFCF2]">
                     <div className="p-8 rounded-lg w-full">
                         <h2 className="text-2xl font-bold mb-6 text-gray-800">Boek uw uitje</h2>

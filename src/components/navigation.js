@@ -17,7 +17,11 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center py-3 bg-[#FEFCF2] z-10 px-4 border-b-2 border-blue-800 w-full">
-      <Image unoptimized src="/logo.jpg" alt="Boat" className="w-20 md:w-32" width={200} height={200} />
+      
+      <Link href='/'>
+       <Image unoptimized src="/logo.jpg" alt="Boat" className="w-20 md:w-32" width={200} height={200} />
+      </Link>
+     
       
       {/* Mobile Menu Toggle */}
       <div className="md:hidden z-20">
@@ -36,7 +40,7 @@ const Navbar = () => {
           <span className="block text-blue-900 hover:text-blue-700 text-3xl">Hoofdmenu</span>
         </Link>
         <Link href="/pricing">
-          <span className="block text-blue-900 hover:text-blue-700 text-3xl">Menu opites</span>
+          <span className="block text-blue-900 hover:text-blue-700 text-3xl">Menu opties</span>
         </Link>
         <Link href="/contact">
           <span className="block text-blue-900 hover:text-blue-700 text-3xl">Contact</span>
@@ -53,7 +57,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/pricing">
-              <span className="block py-2 px-4 text-[#FEFCF2] text-4xl" onClick={() => setIsOpen(false)}>Menu opites</span>
+              <span className="block py-2 px-4 text-[#FEFCF2] text-4xl" onClick={() => setIsOpen(false)}>Menu opties</span>
             </Link>
           </li>
           <li>
